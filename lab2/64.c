@@ -8,7 +8,6 @@ int main()
         x=x<<1;
         count=count+1;
     }
-    printf("%d",count);
-    printf("%u\n",a);
+    printf("%d\n%u\n",count,a);
     return 0;
 }
