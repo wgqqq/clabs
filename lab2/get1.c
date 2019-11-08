@@ -1,5 +1,5 @@
 #include <stdio.h>
-main()
+int main()
 {
     int count=0;
     int a=1;
@@ -9,9 +9,9 @@ main()
         c=c*10+(b-'0');
     }
     while(c!=0){
-        if(a&c!=0) count++;
-        c>>1;
-        }
-        pointf("%d\n",count);
-        return 0;
+        if((a&c)!=0) count++;
+        c=c>>1;
+    }
+    printf("%d\n",count);
+    return 0;
 }
